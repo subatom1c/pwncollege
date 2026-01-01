@@ -1,0 +1,3 @@
+as -o challenge.o challenge.s
+ld -o challenge challenge.o
+/challenge/run challenge
