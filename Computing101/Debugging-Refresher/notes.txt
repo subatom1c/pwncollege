@@ -1,0 +1,14 @@
+To examine the contents of memory use 
+x/<n><u><f> <address>
+-> n is for number of elements
+-> u is for unit size to display (b(1b), h(2b), w(4b), g(8b)
+-> d is for format to display (d(decimal), x(hexa), s(string), i(instruction)
+
+disassemble main -> prints all instructions in main
+x/16gx $rsp will print the first 16 values on the stack
+x/gx $rbp-0x32 will print the local variable stored there on the stack
+x/8i $rip will print the next 8 instructions from the current instruction ptr
+x/16i main will print the first 16 instructions of main
+
+set disassembly-flavor intel (to see correct assembly syntax)
+
